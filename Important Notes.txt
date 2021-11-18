@@ -1,0 +1,30 @@
+Q1. The main method is mandatory in Java or not?
+
+Before JDK 6 :
+
+1.if we dont define main method then we can write our whole logic in Static block and it would run perfectly fine as static bloack loaded first in the memory.
+2.after execting the static block the program goes to find main method and if it dont find then it will give exception while executing the main method
+that main mathod is not found. 
+3. we can use System.exit to get the exit code after static block.
+
+After JDK 6 :
+1. Main method is mandatory and if we dont define main method then it will give a error rather than exception as the code has not run yet.
+
+
+Q2. Difference between error and exception is
+
+Object :-> Throwable -> 1.Exception,2.Error 
+
+Error->
+1. Runtime
+2. Compiler error
+3. Logical Error
+
+Exception-> 1. Checked Exception 2. Unchecked Exception
+1. Runtime 
+
+Errors -> Errors are conditions that cannot get recovered by any handling techniques. It surely causes termination of the program abnormally. Errors belong to unchecked type and mostly occur at runtime. 
+Some of the examples of errors are Out of memory errors or System crash errors
+
+
+
